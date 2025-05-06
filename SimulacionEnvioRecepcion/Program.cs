@@ -9,7 +9,8 @@ namespace SimuladorEnvioRecepcion
     class Program
     {   
         static string UserName;
-        static string SecurePass;  
+        static string SecurePass;
+        static byte[] Salt; 
         static ClaveAsimetrica Emisor = new ClaveAsimetrica();
         static ClaveAsimetrica Receptor = new ClaveAsimetrica();
         static ClaveSimetrica ClaveSimetricaEmisor = new ClaveSimetrica();
@@ -25,10 +26,10 @@ namespace SimuladorEnvioRecepcion
             Console.WriteLine ("¿Deseas registrarte? (S/N)");
             string registro = Console.ReadLine ();
 
-            if (registro =="S")
+            if (registro.Trim().ToUpper() == "S")
             {
                 //Realizar registro del cliente
-                Registro();                
+                Registro();
             }
 
             //Realizar login
@@ -71,15 +72,27 @@ namespace SimuladorEnvioRecepcion
         {
             Console.WriteLine ("Indica tu nombre de usuario:");
             UserName = Console.ReadLine();
-            //Una vez obtenido el nombre de usuario lo guardamos en la variable UserName y este ya no cambiará 
 
             Console.WriteLine ("Indica tu password:");
             string passwordRegister = Console.ReadLine();
-            //Una vez obtenido el passoword de registro debemos tratarlo como es debido para almacenarlo correctamente a la variable SecurePass
 
-            /***PARTE 1***/
-            /*Añadir el código para poder almacenar el password de manera segura*/
+            // 1. Generar un salt aleatorio
+            Salt = new byte[32];
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(Salt);
+            }
 
+            // 2. Aplicar hash iterado con PBKDF2 (Rfc2898DeriveBytes)
+            int iteraciones = 1000;
+            using (var pbkdf2 = new Rfc2898DeriveBytes(passwordRegister, Salt, iteraciones))
+            {
+                byte[] hash = pbkdf2.GetBytes(32); // 256 bits
+                SecurePass = BytesToStringHex(hash); // Guarda el hash como string hexadecimal
+            }
+
+            Console.WriteLine("Registro completado.");
+            Console.WriteLine("Contraseña segura (hash): " + SecurePass);
         }
 
 

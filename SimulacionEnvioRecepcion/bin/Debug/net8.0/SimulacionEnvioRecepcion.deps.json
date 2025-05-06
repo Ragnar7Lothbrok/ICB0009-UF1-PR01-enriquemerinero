@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SimulacionEnvioRecepcion/1.0.0": {
+        "dependencies": {
+          "ClaveAsimetricaClass": "1.0.0",
+          "ClaveSimetricaClass": "1.0.0"
+        },
+        "runtime": {
+          "SimulacionEnvioRecepcion.dll": {}
+        }
+      },
+      "ClaveAsimetricaClass/1.0.0": {
+        "runtime": {
+          "ClaveAsimetricaClass.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ClaveSimetricaClass/1.0.0": {
+        "runtime": {
+          "ClaveSimetricaClass.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimulacionEnvioRecepcion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClaveAsimetricaClass/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClaveSimetricaClass/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
