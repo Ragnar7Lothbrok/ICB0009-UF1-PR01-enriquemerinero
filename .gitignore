@@ -1,0 +1,35 @@
+# Archivos de compilación
+bin/
+obj/
+out/
+
+# Archivos de usuario de Visual Studio / VSCode
+.vscode/
+.vs/
+*.user
+*.suo
+
+# Archivos de publicación
+*.publish.xml
+
+# Archivos de configuración temporales
+*.tmp
+*.log
+
+# Carpetas específicas de entorno
+TestResults/
+build/
+node_modules/
+
+# OneDrive y otros servicios en la nube
+*.tmp.drivedownload
+*.ds_store
+~$*
+
+# Archivos generados por el sistema operativo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos ocultos de macOS
+.DS_Store
