@@ -8,9 +8,9 @@ namespace SimuladorEnvioRecepcion
 {
     class Program
     {   
-        static string UserName;
-        static string SecurePass;
-        static byte[] Salt; 
+        static string? UserName;
+        static string? SecurePass;
+        static byte[]? Salt; 
         static ClaveAsimetrica Emisor = new ClaveAsimetrica();
         static ClaveAsimetrica Receptor = new ClaveAsimetrica();
         static ClaveSimetrica ClaveSimetricaEmisor = new ClaveSimetrica();
@@ -85,7 +85,7 @@ namespace SimuladorEnvioRecepcion
 
             // 2. Aplicar hash iterado con PBKDF2 (Rfc2898DeriveBytes)
             int iteraciones = 1000;
-            using (var pbkdf2 = new Rfc2898DeriveBytes(passwordRegister, Salt, iteraciones))
+            using (var pbkdf2 = new Rfc2898DeriveBytes(passwordRegister, Salt, iteraciones, HashAlgorithmName.SHA512))
             {
                 byte[] hash = pbkdf2.GetBytes(32); // 256 bits
                 SecurePass = BytesToStringHex(hash); // Guarda el hash como string hexadecimal
@@ -109,7 +109,31 @@ namespace SimuladorEnvioRecepcion
                 string Password = Console.ReadLine();
 
                 /***PARTE 1***/
-                /*Modificar esta parte para que el login se haga teniendo en cuenta que el registro se realizó con SHA512 y salt*/
+                if (userName == UserName)
+                {
+                    int iteraciones = 1000;
+
+                    // Generar el hash de la contraseña introducida con el mismo salt
+                    using (var pbkdf2 = new Rfc2898DeriveBytes(Password, Salt, iteraciones, HashAlgorithmName.SHA512))
+                    {
+                        byte[] hash = pbkdf2.GetBytes(32); // mismo tamaño que el registro
+                        byte[] storedHashBytes = StringHexToBytes(SecurePass);
+
+                        if (CryptographicOperations.FixedTimeEquals(hash, storedHashBytes))
+                        {
+                            Console.WriteLine("Login correcto.");
+                            auxlogin = true;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Contraseña incorrecta. Inténtalo de nuevo.");
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Usuario no encontrado. Inténtalo de nuevo.");
+                }
 
 
             }while (!auxlogin);
@@ -125,6 +149,17 @@ namespace SimuladorEnvioRecepcion
                 stringBuilder.AppendFormat("{0:x2}", b);
 
             return stringBuilder.ToString();
-        }        
+        }
+
+        public static byte[] StringHexToBytes(string hex)
+        {
+            int length = hex.Length;
+            byte[] bytes = new byte[length / 2];
+            for (int i = 0; i < length; i += 2)
+            {
+                bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
+            }
+            return bytes;
+        }
     }
 }
