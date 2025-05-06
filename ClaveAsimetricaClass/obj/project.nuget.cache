@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "LER+azMHiMk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveAsimetricaClass\\ClaveAsimetricaClass.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ragnar Lothbrok 7\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.14\\microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\Ragnar Lothbrok 7\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.14\\microsoft.windowsdesktop.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\Ragnar Lothbrok 7\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.14\\microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

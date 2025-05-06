@@ -1,0 +1,15 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SimulacionEnvioRecepcion
+build_property.ProjectDir = C:\Users\Ragnar Lothbrok 7\OneDrive\LaSalle\M09-Seguridad y criptografia\UF1\ICB0009-UF1-Pr01 Enunciado\ICB0009-UF1-Pr01 Enunciado\SimulacionEnvioRecepcion\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

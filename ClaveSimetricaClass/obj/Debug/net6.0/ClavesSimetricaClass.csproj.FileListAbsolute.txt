@@ -1,0 +1,12 @@
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\bin\Debug\net6.0\ClavesSimetricaClass.deps.json
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\bin\Debug\net6.0\ClavesSimetricaClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\bin\Debug\net6.0\ref\ClavesSimetricaClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\bin\Debug\net6.0\ClavesSimetricaClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\obj\Debug\net6.0\ClavesSimetricaClass.csproj.AssemblyReference.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\obj\Debug\net6.0\ClavesSimetricaClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\obj\Debug\net6.0\ClavesSimetricaClass.AssemblyInfoInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\obj\Debug\net6.0\ClavesSimetricaClass.AssemblyInfo.cs
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\obj\Debug\net6.0\ClavesSimetricaClass.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\obj\Debug\net6.0\ClavesSimetricaClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\obj\Debug\net6.0\ref\ClavesSimetricaClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF1\Pr01 - sandbox\ClaveSimetricaClass\obj\Debug\net6.0\ClavesSimetricaClass.pdb
