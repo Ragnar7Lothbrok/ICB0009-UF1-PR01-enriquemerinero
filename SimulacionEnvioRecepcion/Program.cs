@@ -46,7 +46,8 @@ namespace SimuladorEnvioRecepcion
                 //LADO EMISOR
 
                 //Firmar mensaje
-
+                byte[] Firma = Emisor.FirmarMensaje(TextoAEnviar_Bytes);
+                Console.WriteLine("Firma: {0}", BytesToStringHex(Firma));
 
                 //Cifrar mensaje con la clave simétrica
 
