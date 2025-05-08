@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveAsimetricaClass\\ClaveAsimetricaClass.csproj",
+      "projectUniqueName": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-PR01-enriquemerinero\\ClaveAsimetricaClass\\ClaveAsimetricaClass.csproj",
       "projectName": "ClaveAsimetricaClass",
-      "projectPath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveAsimetricaClass\\ClaveAsimetricaClass.csproj",
+      "projectPath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-PR01-enriquemerinero\\ClaveAsimetricaClass\\ClaveAsimetricaClass.csproj",
       "packagesPath": "C:\\Users\\Ragnar Lothbrok 7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveAsimetricaClass\\obj\\",
+      "outputPath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-PR01-enriquemerinero\\ClaveAsimetricaClass\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ragnar Lothbrok 7\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveSimetricaClass\\ClaveSimetricaClass.csproj": {}
+    "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-PR01-enriquemerinero\\ClaveSimetricaClass\\ClaveSimetricaClass.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveSimetricaClass\\ClaveSimetricaClass.csproj": {
+    "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-PR01-enriquemerinero\\ClaveSimetricaClass\\ClaveSimetricaClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveSimetricaClass\\ClaveSimetricaClass.csproj",
+        "projectUniqueName": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-PR01-enriquemerinero\\ClaveSimetricaClass\\ClaveSimetricaClass.csproj",
         "projectName": "ClaveSimetricaClass",
-        "projectPath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveSimetricaClass\\ClaveSimetricaClass.csproj",
+        "projectPath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-PR01-enriquemerinero\\ClaveSimetricaClass\\ClaveSimetricaClass.csproj",
         "packagesPath": "C:\\Users\\Ragnar Lothbrok 7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-Pr01 Enunciado\\ICB0009-UF1-Pr01 Enunciado\\ClaveSimetricaClass\\obj\\",
+        "outputPath": "C:\\Users\\Ragnar Lothbrok 7\\OneDrive\\LaSalle\\M09-Seguridad y criptografia\\UF1\\ICB0009-UF1-PR01-enriquemerinero\\ClaveSimetricaClass\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ragnar Lothbrok 7\\AppData\\Roaming\\NuGet\\NuGet.Config"
