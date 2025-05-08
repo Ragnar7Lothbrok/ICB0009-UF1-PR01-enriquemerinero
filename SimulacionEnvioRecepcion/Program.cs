@@ -65,7 +65,11 @@ namespace SimuladorEnvioRecepcion
                 //LADO RECEPTOR
 
                 //Descifrar clave simétrica
+                ClaveSimetricaReceptor.Key = Receptor.DescifrarMensaje(ClaveSimetricaKeyCifrada);
+                ClaveSimetricaReceptor.IV = Receptor.DescifrarMensaje(ClaveSimetricaIVCifrada);
 
+                Console.WriteLine("Clave simétrica descifrada (Key): {0}", BytesToStringHex(ClaveSimetricaReceptor.Key));
+                Console.WriteLine("Clave simétrica descifrada (IV): {0}", BytesToStringHex(ClaveSimetricaReceptor.IV));
                 
                 //Descifrar clave simétrica
  
