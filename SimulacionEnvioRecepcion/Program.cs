@@ -70,12 +70,10 @@ namespace SimuladorEnvioRecepcion
 
                 Console.WriteLine("Clave simétrica descifrada (Key): {0}", BytesToStringHex(ClaveSimetricaReceptor.Key));
                 Console.WriteLine("Clave simétrica descifrada (IV): {0}", BytesToStringHex(ClaveSimetricaReceptor.IV));
-                
-                //Descifrar clave simétrica
  
-
                 //Descifrar mensaje con la clave simétrica
-
+                string TextoDescifrado = ClaveSimetricaReceptor.DescifrarMensaje(TextoCifrado);
+                Console.WriteLine("Texto descifrado: " + TextoDescifrado);
 
                 //Comprobar firma
 
