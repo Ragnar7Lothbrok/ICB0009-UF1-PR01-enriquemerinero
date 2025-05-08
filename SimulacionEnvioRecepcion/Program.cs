@@ -50,7 +50,8 @@ namespace SimuladorEnvioRecepcion
                 Console.WriteLine("Firma: {0}", BytesToStringHex(Firma));
 
                 //Cifrar mensaje con la clave simétrica
-
+                byte[] TextoCifrado = ClaveSimetricaEmisor.CifrarMensaje(TextoAEnviar);
+                Console.WriteLine("Texto cifrado: {0}", BytesToStringHex(TextoCifrado));
 
                 //Cifrar clave simétrica con la clave pública del receptor
 
