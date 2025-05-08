@@ -10,7 +10,7 @@ namespace SimuladorEnvioRecepcion
     {   
         static string? UserName;
         static string? SecurePass;
-        static byte[]? Salt; 
+        static byte[] Salt = Array.Empty<byte>(); 
         static ClaveAsimetrica Emisor = new ClaveAsimetrica();
         static ClaveAsimetrica Receptor = new ClaveAsimetrica();
         static ClaveSimetrica ClaveSimetricaEmisor = new ClaveSimetrica();
@@ -24,7 +24,8 @@ namespace SimuladorEnvioRecepcion
             /****PARTE 1****/
             //Login / Registro
             Console.WriteLine ("¿Deseas registrarte? (S/N)");
-            string registro = Console.ReadLine ();
+            string? registroInput = Console.ReadLine();
+            string registro = registroInput?.Trim().ToUpper() ?? "";
 
             if (registro.Trim().ToUpper() == "S")
             {
@@ -71,10 +72,12 @@ namespace SimuladorEnvioRecepcion
         public static void Registro()
         {
             Console.WriteLine ("Indica tu nombre de usuario:");
-            UserName = Console.ReadLine();
+            string? userNameInput = Console.ReadLine();
+            UserName = userNameInput ?? "";
 
             Console.WriteLine ("Indica tu password:");
-            string passwordRegister = Console.ReadLine();
+            string? passwordInput = Console.ReadLine();
+            string passwordRegister = passwordInput ?? "";
 
             // 1. Generar un salt aleatorio
             Salt = new byte[32];
@@ -103,21 +106,23 @@ namespace SimuladorEnvioRecepcion
             {
                 Console.WriteLine ("Acceso a la aplicación");
                 Console.WriteLine ("Usuario: ");
-                string userName = Console.ReadLine();
+                string? userNameInput = Console.ReadLine();
+                string userNameLogin = userNameInput ?? "";
 
                 Console.WriteLine ("Password: ");
-                string Password = Console.ReadLine();
+                string? passwordInput = Console.ReadLine();
+                string passwordRegister = passwordInput ?? "";
 
                 /***PARTE 1***/
-                if (userName == UserName)
+                if (userNameLogin == UserName)
                 {
                     int iteraciones = 1000;
 
                     // Generar el hash de la contraseña introducida con el mismo salt
-                    using (var pbkdf2 = new Rfc2898DeriveBytes(Password, Salt, iteraciones, HashAlgorithmName.SHA512))
+                    using (var pbkdf2 = new Rfc2898DeriveBytes(passwordRegister, Salt, iteraciones, HashAlgorithmName.SHA512))
                     {
                         byte[] hash = pbkdf2.GetBytes(32); // mismo tamaño que el registro
-                        byte[] storedHashBytes = StringHexToBytes(SecurePass);
+                        byte[] storedHashBytes = StringHexToBytes(SecurePass ?? "");
 
                         if (CryptographicOperations.FixedTimeEquals(hash, storedHashBytes))
                         {
