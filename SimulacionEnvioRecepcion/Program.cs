@@ -76,7 +76,19 @@ namespace SimuladorEnvioRecepcion
                 Console.WriteLine("Texto descifrado: " + TextoDescifrado);
 
                 //Comprobar firma
+                byte[] TextoDescifrado_Bytes = Encoding.UTF8.GetBytes(TextoDescifrado);
 
+                bool firmaValida = Receptor.ComprobarFirma(Firma, TextoDescifrado_Bytes, Emisor.PublicKey);
+
+                if (firmaValida)
+                {
+                    Console.WriteLine("Firma válida ✅. El mensaje es auténtico.");
+                    Console.WriteLine("Mensaje recibido correctamente: " + TextoDescifrado);
+                }
+                else
+                {
+                    Console.WriteLine("Firma NO válida ❌. El mensaje podría haber sido modificado.");
+                }
             }
         }
 
