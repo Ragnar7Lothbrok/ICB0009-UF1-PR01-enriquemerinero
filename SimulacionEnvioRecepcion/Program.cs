@@ -31,6 +31,9 @@ namespace SimuladorEnvioRecepcion
             {
                 //Realizar registro del cliente
                 Registro();
+            } else {
+                Console.WriteLine("⚠️ No se ha registrado ningún usuario. El login no funcionará si no hay credenciales.");
+                Registro();
             }
 
             //Realizar login
